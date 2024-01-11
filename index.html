@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Career</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+</head>
+<body>
+    <div class="container">
+        <div class="div1">
+            <h1>Navigating Your Future: A Comprehensive Guide to Career Success for Students</h1>
+        </div>
+        <div class="div2">
+            <ul>
+                <li><a class="active" href="index.html">Home</a></li>
+                <li><a href="#div1">Contact</a></li>
+                <li><a href="about.html">About</a></li>          
+             </ul>
+            </div>
+        <div class="div3">
+            <div class="card">
+                <img src="images4.jpg" alt="" style="width:100%">
+                <h2>To be a Successful Student</h2>
+                <p>Certainly! Here are some career advice and tips for students</p>
+                <button onclick="document.location='advice.html'">Career Advice</button>
+              </div>
+        </div>
+        <div class="div4">
+            <div class="card">
+                <img src="image1.jpg" alt="" style="width:100%">
+                <h2>Comprehensive Guide to Success</h2>
+                <p>The journey ahead is both thrilling and challenging</p>
+                <button onclick="document.location='guide.html'">Career Guide</button>
+              </div>
+        </div>
+        <div class="div5">
+            <div class="card">
+                <img src="pic12.jpg" alt="" style="width:100%">
+                <h2>13 Keys to Academic Success</h2>
+                <p>Center for Academic Advising and Student Success</p>
+                <button onclick="document.location='keys.html'">Academic Success</button>
+
+              </div>
+
+        </div>
+        <div class="div6">
+            <div class="card">
+                <img src="download.jpg" alt="Denim Jeans" style="width:100%">
+                <h2>Tips for being a Successful Student</h2>
+                <p>A hard-working student does and what a teacher likes to see</p>
+                <button onclick="document.location='success.html'">See Tips</button>
+              </div>
+
+        </div>
+        <div class="div7" id="div1">
+            <footer>
+                <p>web developed by: Rivera Kent<br>
+                <a href="https://web.facebook.com/kent.rivera.520" class="fa fa-facebook">https://web.facebook.com/kent.rivera.520</a></p>
+            </footer>
+        </div>
+    </div>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+  var scrollLinks = document.querySelectorAll('[href^="#"]');
+  
+  scrollLinks.forEach(function(link) {
+    link.addEventListener('click', function(e) {
+      e.preventDefault();
+      
+      var targetId = this.getAttribute('href');
+      var targetElement = document.querySelector(targetId);
+      
+      if (targetElement) {
+        targetElement.scrollIntoView({
+          behavior: 'smooth'
+        });
+      }
+    });
+  });
+});
+    </script>
+</body>
+</html>
+

@@ -17,7 +17,7 @@
         <div class="div2">
             <ul>
                 <li><a class="active" href="index.html">Home</a></li>
-                <li><a href="contact.html">Contact</a></li>
+                <li><a href="#div1">Contact</a></li>
                 <li><a href="about.html">About</a></li>
                <button onclick="document.location='index.html'">Back</button>
             </ul>
@@ -71,7 +71,7 @@
 
 
 
-        <div class="div7">
+        <div class="div7" id="div1">
             <footer>
                 <p>web developed by: Rivera Kent<br>
                     <a href="https://web.facebook.com/kent.rivera.520">https://web.facebook.com/kent.rivera.520</a>
@@ -79,6 +79,26 @@
             </footer>
         </div>
     </div>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+  var scrollLinks = document.querySelectorAll('[href^="#"]');
+  
+  scrollLinks.forEach(function(link) {
+    link.addEventListener('click', function(e) {
+      e.preventDefault();
+      
+      var targetId = this.getAttribute('href');
+      var targetElement = document.querySelector(targetId);
+      
+      if (targetElement) {
+        targetElement.scrollIntoView({
+          behavior: 'smooth'
+        });
+      }
+    });
+  });
+});
+    </script>
 </body>
 
 </html>
